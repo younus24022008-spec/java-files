@@ -1,5 +1,9 @@
-public class squareIsWhite {
+public class squareIswhite {
     public boolean squareIsWhite(String coordinates) {
-        return (coordinates.charAt(0) + coordinates.charAt(1)) % 2!=0;
+        char col = coordinates.charAt(0); //a
+        char row = coordinates.charAt(1); //1
+        int colNumber = col - 'a' + 1;
+        int rowNumber = row - '0';
+        return (colNumber + rowNumber) % 2 != 0;
     }
 }
